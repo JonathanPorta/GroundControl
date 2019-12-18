@@ -2,3 +2,4 @@
 *.ini
 *ENV
 log.txt
+env
