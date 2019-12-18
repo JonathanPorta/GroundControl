@@ -1,0 +1,100 @@
+dnf install -y cairo-devel
+sudo dnf install -y nasm \                
+        python-devel \
+        pygobject3-devel \
+        twolame-devel \
+        yasm \
+        python-pip \
+        SDL \
+        SDL_mixer \
+        SDL_ttf \
+        SDL_image \
+        SDL_gfx \
+        SDL2 \
+        SDL2_mixer \
+        SDL2_ttf \
+        SDL2_image \
+        SDL2_gfx \
+        SDL-devel \
+        SDL_mixer-devel \
+        SDL_ttf-devel \
+        SDL_image-devel \
+        SDL_gfx-devel \
+        SDL2-devel \
+        SDL2_mixer-devel \
+        SDL2_ttf-devel \
+        SDL2_image-devel \
+        SDL2_gfx-devel \
+        zlib-devel \
+        flex \
+        bison \
+        wget
+
+sudo dnf -y install \                     
+        alsa-lib-devel \
+        automake \
+        cairo-devel \
+        cairo-gobject-devel \
+        centos-release-scl \
+        docker-latest \
+        emacs \
+        gcc \
+        gcc-c++ \
+        gettext-devel \
+        gtk-doc \
+        libffi-devel \
+        libjpeg-turbo-devel \
+        libcap-devel \
+        libsrtp-devel \
+        libva-devel \
+        khrplatform-devel \
+        krb5-devel \
+        make \
+        mesa-libGL \
+        mesa-libGL-devel \
+        mesa-libGLES \
+        mesa-libGLES-devel \
+        mesa-libEGL \
+        mesa-libEGL-devel \
+        mercurial \
+        mtdev-devel
+
+Issues/Links:
+Ensure you have the deps mentioned here: https://kivy.org/doc/stable/installation/installation-linux-venvs.html#installation-in-venv
+
+Bump the version of 
+kivy to 1.10.1 because it has fixes for a breaking change in one of the SDL libs
+
+
+Final python reqs that worked for me:
+
+appdirs==1.4.3
+certifi==2019.11.28
+chardet==3.0.4
+Cython==0.25.2
+docutils==0.15.2
+idna==2.7
+Kivy==1.10.1
+Kivy-Garden==0.1.4
+packaging==16.8
+Pillow==6.2.0
+pycairo==1.18.2
+pygame==1.9.3
+Pygments==2.5.2
+pyparsing==2.2.0
+pyserial==3.3
+requests==2.20.0
+six==1.10.0
+urllib3==1.24.3
+
+
+
+https://github.com/kivy/kivy/issues/580
+https://github.com/kivy/kivy/pull/5459
+https://github.com/kivy/kivy/issues/5770
+https://github.com/kivy/kivy/issues/5984
+https://github.com/kivy/kivy/issues/5566
+
+dnf remove python3-pyserial
+dnf install python2-pyserial (or something to this effect)
+
